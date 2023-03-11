@@ -1,0 +1,404 @@
+:root {
+    --main-brown: rgb(83, 53, 25);
+    --main-black: black;
+    --main-orange: rgb(243, 120, 6);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.frame {
+    z-index: -2;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:600px;
+}
+
+/* ============ Tiger ============= */
+/* ================================ */
+
+.pink {
+    background-color: lightpink;
+}
+
+.tiger {
+    position: relative;
+    width: 500px;
+    min-height: 500px;
+}
+
+.tiger .head {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--main-orange);
+    position: relative;
+    left:150px;
+}
+
+.tiger .ear {
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-orange);
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+}
+
+.tiger .ear.right {
+    left: 150px;
+    border-top-right-radius: 20px;
+}
+.tiger .ear.left {
+    left: -10px;
+    border-top-left-radius: 20px;
+}
+
+.tiger .ear-sub {
+    width: 42px;
+    height: 42px;
+    background-color: #eec5aa;
+    position: absolute;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.tiger .ear.right .ear-sub{
+    left:7px;
+    border-top-right-radius: 10px;
+}
+.tiger .ear.left .ear-sub{
+    left:10px;
+    border-top-left-radius: 10px;
+}
+
+.tiger .eye {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 115px;
+}
+
+.tiger .eye.left {
+    left: 70px;
+}
+
+.tiger .eye.right {
+    right: 70px;
+}
+
+.tiger .nose {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #97563c;
+    position: absolute;
+    top: 115px;
+    left: 87px;
+}
+/* ============ Elephant ============= */
+/* =================================== */
+
+.yellow {
+    background-color: #eeda91;
+}
+
+.elephant {
+    position: relative;
+    width: 500px;
+    min-height: 500px;
+}
+
+.body {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: grey;
+    position:absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.elephant .head {
+    width: 340px;
+    height: 340px;
+    border-style:solid;
+    border-width:170px 0 0 0;
+    border-top-right-radius:50%;
+    border-top-left-radius: 50%;
+    border-color: grey;
+    background-color:#eeda91;
+    position: absolute;
+    top: 75px;
+    left:-30px;
+    z-index:-1;
+    transform: rotate(-40deg);
+}
+
+.tail {
+    width: 20px;
+    height: 100px;
+    position: absolute;
+    top: 80px;
+    left: 280px;
+    background-color: grey;
+    transform: rotate(-50deg);
+    border-radius: 10px;
+}
+
+.leg {
+    width: 70px;
+    height: 100px;
+    position: absolute;
+    top: 235px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.leg.front {
+    left: 70px;
+}
+
+.leg.back {
+    left: 160px;
+}
+
+.trunk {
+    width: 160px;
+    height: 160px;
+    background-color: #eeda91;
+    border: 50px solid grey;
+    border-radius: 50%;
+    position: absolute;
+    top: -74px;
+}
+
+.elephant .eye {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: -110px;
+    left: 125px;
+}
+
+.elephant .eye-sub {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: -105px;
+    left: 125px;
+}
+
+.elephant .ear {
+    width: 160px;
+    height: 130px;
+    background-color: rgb(252, 204, 212);
+    border-radius: 50%;
+    position: absolute;
+    top: 140px;
+    left: 110px;
+    transform: rotate(-40deg);
+}
+
+.hat {
+    height : 0;
+    width : 0;
+    border-right : 50px solid transparent;
+    border-bottom : 100px solid rgb(234, 130, 255);
+    border-left : 50px solid transparent;
+    position: absolute;
+    z-index: -2;
+    left: 65px;
+    top:-10px;
+    transform:rotate(-5deg)
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 0, 170);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.one {
+    top:75px;
+    left:-30px;
+}
+
+.two {
+    top:65px;
+    left:-5px;
+}
+
+.three {
+    top:80px;
+    left:20px;
+}
+
+.four {
+    top:45px;
+    left:-15px;
+}
+
+.five {
+    top:45px;
+    left:10px;
+}
+
+.six {
+    top:20px;
+    left:-5px;
+}
+
+/* ============ Bear Head ============= */
+/* ==================================== */
+
+.green {
+    background-color: rgb(145, 206, 180);
+}
+
+.bear {
+    position: relative;
+    width:500px;
+}
+
+.bear .head {
+    width: 500px;
+    height: 460px;
+    border-radius: 50%;
+    background-color: var(--main-brown);
+}
+
+.bear .ear {
+    width: 190px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: var(--main-brown);
+    position: absolute;
+    top: -20px;
+    z-index: -1;
+}
+
+.bear .ear.left {
+    left: 10px;
+    transform: rotate(-30deg);
+}
+
+.bear .ear.right {
+    right: 10px;
+    transform: rotate(30deg);
+}
+
+.bear .ear-sub {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: lightpink;
+    position: absolute;
+    top: 20px;
+}
+
+.left .ear-sub {
+    left: 40px;
+}
+
+.right .ear-sub {
+    right: 40px;
+}
+
+.bear .eye {
+    width: 35px;
+    height: 35px;
+    background-color: var(--main-black);
+    border-radius: 50%;
+    position: absolute;
+    top: 230px;
+}
+
+.eye.left {
+    left: 150px;
+}
+
+.eye.right {
+    right: 150px;
+}
+
+.bear .muzzle {
+    width: 150px;
+    height: 135px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: absolute;
+    top: 270px;
+    left: 175px;
+}
+
+.bear .nose {
+    width: 50px;
+    height: 25px;
+    background-color:var(--main-black);
+    border-radius: 50%;
+    position: absolute;
+    top: 280px;
+    left: 225px;
+}
+
+.nose-sub {
+    width: 8px;
+    height: 35px;
+    background-color:var(--main-black);
+    position: absolute;
+    top: 24px;
+    left: 21px;
+}
+
+.pacifier {
+    width: 84px;
+    height: 60px;
+    background-color:lightblue;
+    border-radius: 45%;
+    position: absolute;
+    top: 330px;
+    left: 208px;
+}
+
+.pacifier-sub.one {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 22px;
+}
+
+.pacifier-sub.two {
+    width: 52px;
+    height: 52px;
+    border: 5px solid yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 18px;
+}
