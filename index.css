@@ -70,20 +70,20 @@ body {
 }
 
 .tiger .ear-sub {
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     background-color: #eec5aa;
     position: absolute;
-    top: 10px;
+    top: 14px;
     border-radius: 50%;
 }
 
 .tiger .ear.right .ear-sub{
-    left:7px;
+    left:8px;
     border-top-right-radius: 10px;
 }
 .tiger .ear.left .ear-sub{
-    left:10px;
+    left:14px;
     border-top-left-radius: 10px;
 }
 
@@ -113,6 +113,93 @@ body {
     top: 115px;
     left: 87px;
 }
+
+.tiger .muzzle-sub {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 126px;
+}
+
+.tiger .muzzle-sub.left {
+    left: 70px;
+}
+
+.tiger .muzzle-sub.right {
+    right: 70px;
+}
+
+.stripe {
+    width: 50px;
+    height: 10px;
+    background-color: black;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    position: absolute;
+}
+
+.stripe.one {
+    transform: rotate(90deg);
+    top: 20px;
+    left: 75px;
+}
+
+.stripe.two {
+    transform: rotate(90deg);
+    top: 22px;
+    left: 55px;
+}
+
+.stripe.three {
+    transform: rotate(90deg);
+    top: 22px;
+    left: 95px;
+}
+
+.stripe.four {
+    width:45px;
+    top: 80px;
+    left: 2px;
+}
+
+.stripe.five {
+    transform: rotate(180deg);
+    width:45px;
+    top: 80px;
+    left: 154px;
+}
+
+.stripe.six {
+    width:40px;
+    top: 100px;
+    left: 0px;
+}
+
+.stripe.seven {
+    transform: rotate(180deg);
+    width:40px;
+    top: 100px;
+    left: 160px;
+}
+
+.stripe.eight {
+    width:35px;
+    top: 120px;
+    left: 3px;
+}
+
+.stripe.nine {
+    transform: rotate(180deg);
+    width:35px;
+    top: 120px;
+    left: 163px;
+}
+
+
 /* ============ Elephant ============= */
 /* =================================== */
 
