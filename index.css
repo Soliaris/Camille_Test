@@ -251,15 +251,15 @@ body {
     border-radius: 50%;
     background-color: var(--main-orange);
     z-index: 2;
-    top: 270px;
+    top: 90px;
 }
 
 .paw.left {
-    left: 75px;
+    left: -15px;
 }
 
 .paw.right {
-    right: 75px;
+    right: -15px;
 }
 
 /* ============ Elephant ============= */
