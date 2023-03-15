@@ -2,6 +2,7 @@
     --main-brown: rgb(83, 53, 25);
     --main-black: black;
     --main-orange: rgb(243, 120, 6);
+    --newspaper-grey: rgb(207, 206, 206);
 }
 
 * {
@@ -152,12 +153,14 @@ body {
     transform: rotate(90deg);
     top: 22px;
     left: 55px;
+    border-bottom-left-radius: 40%;
 }
 
 .stripe.three {
     transform: rotate(90deg);
     top: 22px;
     left: 95px;
+    border-top-left-radius: 40%;
 }
 
 .stripe.four {
@@ -189,16 +192,75 @@ body {
 .stripe.eight {
     width:35px;
     top: 120px;
-    left: 3px;
+    left: 4px;
+    border-bottom-left-radius: 30%;
+    border-top-left-radius: 30%;
 }
 
 .stripe.nine {
     transform: rotate(180deg);
     width:35px;
     top: 120px;
-    left: 163px;
+    left: 162px;
+    border-bottom-right-radius: 30%;
+    border-top-right-radius: 30%;
 }
 
+.newspaper {
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    background-color: var(--newspaper-grey);
+    top: 180px;
+}
+
+.part.left {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+}
+
+.headline {
+    width: 120px;
+    height: 14px;
+    position: absolute;
+    background-color: var(--newspaper-grey);
+}
+
+.headline.one {
+    top: 30px;
+    left: 14px; 
+}
+
+.headline.two {
+    top: 56px;
+    left: 34px;
+}
+
+.headline.three {
+    height: 60px;
+    width: 100px;
+    top: 92px;
+    left: 30px;
+}
+
+.paw {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--main-orange);
+    z-index: 2;
+    top: 270px;
+}
+
+.paw.left {
+    left: 75px;
+}
+
+.paw.right {
+    right: 75px;
+}
 
 /* ============ Elephant ============= */
 /* =================================== */
