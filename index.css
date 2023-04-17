@@ -1,5 +1,6 @@
 :root {
     --main-brown: rgb(83, 53, 25);
+    --main-lightbrown: rgb(80, 53, 29);
     --main-black: black;
     --main-orange: rgb(243, 120, 6);
     --newspaper-grey: rgb(207, 206, 206);
@@ -27,6 +28,68 @@ body {
     align-items: center;
     justify-content: center;
     min-height:800px;
+}
+
+/* ============ Castor ============= */
+/* ================================ */
+
+.red {
+    background-color: lightcoral;
+}
+
+.castor {
+    position: relative;
+    width: 500px;
+    min-height: 500px;
+    display:flex;
+    justify-content: center;
+}
+
+.castor .head {
+    position: absolute;
+    top: 30px;
+    width: 380px;
+    height: 340px;
+    background-color: var(--main-lightbrown);
+    border-radius: 90%;
+    border-bottom-left-radius: 420px;
+    border-bottom-right-radius: 420px;
+}
+
+.castor .ear {
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    background-color: var(--main-lightbrown);
+    border-radius: 50%;
+    top: -10px;
+    z-index: -1;
+}
+
+.castor .ear.left {
+    transform: rotate(45deg);
+    left: -20px;
+}
+.castor .ear.right {
+    transform: rotate(-45deg);
+    right: -20px;
+}
+
+.castor .ear-sub {
+    position: absolute;
+    width: 120px;
+    height: 90px;
+    background-color: rgb(233, 148, 95);
+    border-radius: 50%;
+    z-index: -1;
+    top:15px;
+}
+
+.castor .ear.left .ear-sub{
+    left: 20px;
+}
+.castor .ear.right .ear-sub{
+    right: 20px;
 }
 
 /* ============ Tiger ============= */
