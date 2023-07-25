@@ -1,6 +1,7 @@
 :root {
     --main-brown: rgb(83, 53, 25);
     --main-lightbrown: rgb(80, 53, 29);
+    --main-middlebrown: rgba(102, 55, 14);
     --main-black: black;
     --main-orange: rgb(243, 120, 6);
     --newspaper-grey: rgb(207, 206, 206);
@@ -50,7 +51,7 @@ body {
     top: 30px;
     width: 380px;
     height: 340px;
-    background-color: var(--main-lightbrown);
+    background-color: var(--main-middlebrown);
     border-radius: 90%;
     border-bottom-left-radius: 420px;
     border-bottom-right-radius: 420px;
@@ -60,7 +61,7 @@ body {
     position: absolute;
     width: 150px;
     height: 120px;
-    background-color: var(--main-lightbrown);
+    background-color: var(--main-middlebrown);
     border-radius: 50%;
     top: -10px;
     z-index: -1;
@@ -91,6 +92,124 @@ body {
 .castor .ear.right .ear-sub{
     right: 20px;
 }
+
+.castor .eye,
+.castor .eye-sub {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.castor .eye{
+    width: 70px;
+    height: 100px;
+    background-color: white;
+    top: 90px;
+}
+
+.castor .eye-sub {
+    width: 35px;
+    height: 60px;
+    background-color: black;
+    top: 20px;
+}
+
+.castor .eye.left {
+    left: 70px;
+}
+
+.castor .eye.right {
+    right: 70px;
+}
+
+.castor .eye.left .eye-sub {
+    left: 10px;
+}
+
+.castor .eye.right .eye-sub {
+    left: 10px;
+}
+
+.castor .hair {
+    width: 35px;
+    height: 35px;
+    background-color: var(--main-middlebrown);
+    position: absolute;
+    top: -8px;
+    transform: rotate(-25deg);
+}
+
+.castor .hair.one {
+    left: 150px;
+}
+
+.castor .hair.two {
+    left: 190px;
+}
+
+.castor .muzzle {
+    position:absolute;
+    width: 80px;
+    height: 60px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    position: absolute;
+    top: 185px;
+    left: 150px;
+}
+
+.castor .nose {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(53, 30, 21);
+    position: absolute;
+    left:20px;
+    top:-20px;
+    border-radius: 25%;
+    transform: rotate(45deg);
+    border-top-left-radius: 50%;
+}
+
+.castor .mouth {
+    width: 70px;
+    height: 40px;
+    border: 5px solid rgb(53, 30, 21);
+    border-radius: 10px;
+    border-top: 0px;
+    position: absolute;
+    top: 5px;
+    z-index: 2;
+}
+
+.castor .mouth.left {
+    border-left: 0px;
+    left: -27px;
+}
+
+.castor .mouth.right {
+    border-right: 0px;
+    right: -27px;
+}
+
+.castor .teeth {
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.castor .teethsub {
+    width: 2px;
+    height: 60px;
+    background-color: rgb(182, 182, 182);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* ============ Tiger ============= */
 /* ================================ */
@@ -621,7 +740,8 @@ body {
 @media(max-width:600px) {
     .elephant,
     .tiger,
-    .bear {
+    .bear,
+    .castor {
         transform:scale(0.70)
     }
 }
